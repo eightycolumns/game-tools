@@ -1,0 +1,33 @@
+python -m venv venv
+. venv/bin/activate
+pip install -e .
+pip install --group dev
+
+Dependency:
+    https://homepages.cwi.nl/~aeb/go/sgfutils/html/sgfutils.html
+    https://homepages.cwi.nl/~aeb/go/sgfutils/html/sgftf.html
+
+Example ~/.config/game-tools/config.json file:
+{
+    "chess": {
+        "algorithm": "fsrs",
+    },
+    "go": {
+        "algorithm": "fsrs",
+        "command": "sabaki"
+    }
+}
+
+Either store config in ~/.config/game-tools/config.json and only log when
+--log-file provides a path to file, or else store both in
+~/.<tool-name>/config.json and ~/.<tool-name>/debug.logs. Either way, store
+cards and review logs organized by algorithm in collection dirs, like this:
+
+/path/to/collection
+    .state
+        fsrs
+            cards.json
+            review-log.jsonl
+        leitner
+            cards.json
+            review-log.jsonl

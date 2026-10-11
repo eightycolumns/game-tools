@@ -1,0 +1,11 @@
+{
+    "train": {
+        "algorithm": "fsrs",
+        "games": {
+            "chess": {},
+            "go": {
+                "command": "sabaki"
+            }
+        }
+    }
+}

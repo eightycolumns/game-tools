@@ -1,0 +1,49 @@
+hone
+crucible
+gauntlet
+reps
+kata
+sensei
+moyo
+sente
+
+Deshi
+弟子
+Japenese for "apprentice"
+
+keiko
+稽古
+Japanese for "training, practice"
+
+shugyo
+修行
+
+togu
+研ぐ
+Japanese for "to sharpen"
+
+kitae
+鍛え
+Japanese for "training, tempering, honing"
+
+migaku
+磨く
+Japanese for "polish"
+
+
+Just support fsrs for now.
+
+Require either --chess or --go.
+
+If --command <command>, use <command>, else use train.games.<chess-or-go>.command from config.
+
+Require collection.
+
+train [--chess | --go] [--command] <collection>
+
+
+
+    --game
+    --algorithm
+    --command
+    <collection>
